@@ -12,10 +12,6 @@ $ mkdocs serve # in root folder
 ```
 2）本地预览：本地在浏览器打开 [http://localhost:8000/](http://localhost:8000/) 
 
-3）打包部署：
-```shell
-$ mkdocs build
-```
+3）通过Git提交改动。
 
-4）通过Git提交改动。
-
+4）联系阿里云为您部署。
