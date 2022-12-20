@@ -42,7 +42,7 @@ TuGraph服务需要对ECS、VPC等资源进行访问和创建操作，若您使�
 
 1. 单击下面的部署链接，进入服务实例部署界面，根据界面提示，填写参数完成部署。
 
-[部署链接](https://computenest.console.aliyun.com/user/cn-hangzhou/serviceInstanceCreate?spm=5176.24779694.0.0.3d9d4d22Kr7osZ&ServiceId=service-7b50ea3d20e643da95bf)
+[部署链接](https://computenest.console.aliyun.com/user/cn-hangzhou/serviceInstanceCreate?spm=5176.24779694.0.0.3d9d4d22Kr7osZ&ServiceId=service-7b50ea3d20e643da95bf&&isTrial=true)
 
 1. 单击部署链接。在创建服务实例页面，需先选中 **同意授权并创建关联角色** ，选中后即可继续创建服务实例。
 
