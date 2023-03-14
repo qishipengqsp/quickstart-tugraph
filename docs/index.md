@@ -1,6 +1,6 @@
 # TuGraph服务实例部署文档
 ## 概述
-TuGraph（tugraph.org）是蚂蚁集团的高性能图数据库（Graph Database）及图数据管理平台。TuGraph在计算巢上提供了社区版服务，您无需自行配置云主机，即可在计算巢上快速部署TuGraph服务、实现运维监控，从而方便地基于TuGraph搭建您自己的图应用。本文向您介绍如何开通计算巢上的TuGraph社区版服务，以及部署流程和使用说明。
+TuGraph（tugraph.antgroup.com）是蚂蚁集团的高性能图数据库（Graph Database）及图数据管理平台。TuGraph在计算巢上提供了社区版服务，您无需自行配置云主机，即可在计算巢上快速部署TuGraph服务、实现运维监控，从而方便地基于TuGraph搭建您自己的图应用。本文向您介绍如何开通计算巢上的TuGraph社区版服务，以及部署流程和使用说明。
 ## 计费说明
 TuGraph社区版在计算巢上的费用主要涉及：
 
@@ -42,7 +42,7 @@ TuGraph服务需要对ECS、VPC等资源进行访问和创建操作，若您使�
 
 1. 单击下面的部署链接，进入服务实例部署界面，根据界面提示，填写参数完成部署。
 
-[部署链接](https://computenest.console.aliyun.com/user/cn-hangzhou/serviceInstanceCreate?spm=5176.24779694.0.0.3d9d4d22Kr7osZ&ServiceId=service-7b50ea3d20e643da95bf&&isTrial=true)
+[部署链接](https://computenest.console.aliyun.com/user/cn-hangzhou/serviceInstanceCreate?ServiceId=service-7b50ea3d20e643da95bf&&isTrial=true)
 
 1. 单击部署链接。在创建服务实例页面，需先选中 **同意授权并创建关联角色** ，选中后即可继续创建服务实例。
 
@@ -80,15 +80,15 @@ TuGraph服务需要对ECS、VPC等资源进行访问和创建操作，若您使�
 
 
 ### 使用TuGraph
-请访问TuGraph官网了解如何使用TuGraph：[TuGraph可视化使用文档](https://www.tugraph.org/doc?version=V3.3.0&id=10000000001031969)
+请访问TuGraph官网了解如何使用TuGraph：[TuGraph可视化使用文档](https://tugraph.antgroup.com//doc?version=V3.3.3)
 
 ## 问题排查
-请访问TuGraph-db on Github的[Discussion](https://github.com/TuGraph-db/tugraph-db/discussions/115)获取帮助
+请访问TuGraph-db on Github的[Discussion](https://github.com/TuGraph-family/tugraph-family/discussions/115)获取帮助
 
 ## 联系我们
-欢迎访问TuGraph官网（[https://www.tugraph.org/](https://www.tugraph.org/)）了解更多信息。
+欢迎访问TuGraph官网（[https://tugraph.antgroup.com/](https://tugraph.antgroup.com/)）了解更多信息。
 联系邮箱：[tugraph@service.alipay.com](mailto:tugraph@service.alipay.com)
-社区版开源地址：[https://github.com/TuGraph-db/tugraph-db](https://github.com/TuGraph-db/tugraph-db)
+社区版开源地址：[https://github.com/TuGraph-family/tugraph-db](https://github.com/TuGraph-family/tugraph-db)
 扫码关注微信公众号，技术博客、活动通知不容错过：
 
 ![%.png](5.png)
