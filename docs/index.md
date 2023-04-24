@@ -20,7 +20,8 @@ TuGraph部署的为社区开源版本，源码参考[Github Repo](https://github
 
 在正式开始使用前，您需要一个阿里云账号，对ECS、VPC等资源进行访问和创建操作。
 
-若您使用RAM用户创建服务实例，需要在创建服务实例前，对使用的RAM用户的账号添加相应资源的权限。添加RAM权限的详细操作，请参见[为RAM用户授权](https://help.aliyun.com/document_detail/121945.html)。所需权限如下表所示。
+- 若您使用个人账号，可以直接创建服务实例
+- 若您使用RAM用户创建服务实例，需要在创建服务实例前，对使用的RAM用户的账号添加相应资源的权限。添加RAM权限的详细操作，请参见[为RAM用户授权](https://help.aliyun.com/document_detail/121945.html)。所需权限如下表所示。
 
 | 权限策略名称 | 备注 |
 | --- | --- |
@@ -42,11 +43,7 @@ TuGraph部署的为社区开源版本，源码参考[Github Repo](https://github
 
 ![1.png](1.png)
 
-### 2. 申请试用
-
-TODO
-
-### 3. 参数配置 
+### 2. 参数列表
 
 您在创建服务实例的过程中，需要配置服务实例信息，具体如下。
 
@@ -61,33 +58,53 @@ TODO
 | ECS实例配置 | 实例类型 | ecs.r6.xlarge | 当前支持ecs.r6.xlarge和ecs.r7a.xlarge规格 |
 | ECS实例配置 | 实例密码 | ******** | 设置实例密码。长度8~30个字符，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+={}[]:;'<>,.?/ 中的特殊符号）。 |
 
-![2.png](2.png)
+### 3. 创建TuGraph服务
 
-点击左下角*确认订单*，此时按量费用应该是0元/小时
+创建服务按如下步骤进行，参考下图：
 
-### 4. 启动服务
+- 创建实例名称，如下图中“test”
+- 选择地域，如下图中“华东1（杭州）”
 
-1. 查看服务实例。
-服务实例创建成功后，部署时间大约需要2分钟。部署完成后，页面上可以看到对应的服务实例。 
+![2-1.png](2-1.png)
+
+- 选择部署区域，如下图中“可用区I”
+- 选择实例类型，当前支持ecs.r6.xlarge和ecs.r7a.xlarge规格。**如果列表中无机型可选，请尝试选择其他的部署区域**
+- 选中机型
+- 配置实例的密码
+
+![2-2.png](2-2.png)
+
+- 点击下一步，进入订单确认页面
+- 勾选“权限确认”和“服务条款”中的复选框
+
+![2-3.png](2-3.png)
+
+- 点击左下角绿色背景的*开始免费试用*，
+
+### 4. 启动TuGraph服务
+
+- 查看服务实例：服务实例创建成功后，部署时间大约需要2分钟。部署完成后，页面上可以看到对应的服务实例，如下图
 
 ![3.png](3.png)
 
-2. 通过服务实例访问TuGraph
+- 点击该服务实例访问TuGraph。进入到对应的服务实例后，可以在页面上获取到web、rpc、ssh共3种使用方式。
 
 ![4.png](4.png)
-进入到对应的服务实例后，可以在页面上获取到web、rpc、ssh共3种使用方式。
 
+- 点击web的链接，即可跳转访问已经部署好的TuGraph的前端页面
 
-### 试用TuGraph
-建议新手先通过网页端的demo快速使用。
+### 5. 使用TuGraph服务
 
-更多功能参考[TuGraph可视化使用文档](https://tugraph.antgroup.com/doc?version=V3.3.4)
+建议新手先通过网页端的demo快速使用。更多功能参考[TuGraph可视化使用文档](https://tugraph.antgroup.com/doc?version=V3.3.4)
 
 ## 联系我们
-快速问题排查：[Github Discussion](https://github.com/TuGraph-family/tugraph-db/discussions/115)
-TuGraph官网：[https://tugraph.antgroup.com/](https://tugraph.antgroup.com/)
-联系邮箱：[tugraph@service.alipay.com](mailto:tugraph@service.alipay.com)
-社区版开源地址：[https://github.com/TuGraph-family/tugraph-db](https://github.com/TuGraph-family/tugraph-db)
+
+- 快速问题排查：[Github Discussion](https://github.com/TuGraph-family/tugraph-db/discussions/115)
+- TuGraph官网：[https://tugraph.antgroup.com/](https://tugraph.antgroup.com/)
+- 联系邮箱：[tugraph@service.alipay.com](mailto:tugraph@service.alipay.com)
+- 社区版开源地址：[https://github.com/TuGraph-family/tugraph-db](https://github.com/TuGraph-family/tugraph-db)
+
+
 扫码关注微信公众号，技术博客、活动通知不容错过：
 
 ![%.png](5.png)
