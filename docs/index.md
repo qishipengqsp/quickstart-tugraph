@@ -19,12 +19,15 @@ TuGraph部署的为社区开源版本，源码参考[Github Repo](https://github
 
 ## 部署流程
 
-### 准备工作
+### 0. 准备工作
 
 在正式开始使用前，您需要一个阿里云账号，对ECS、VPC等资源进行访问和创建操作。
 
 - 若您使用个人账号，可以直接创建服务实例
-- 若您使用RAM用户创建服务实例，需要在创建服务实例前，对使用的RAM用户的账号添加相应资源的权限。添加RAM权限的详细操作，请参见[为RAM用户授权](https://help.aliyun.com/document_detail/121945.html)。所需权限如下表所示。
+- 若您使用RAM用户创建服务实例，且是第一次使用阿里云计算巢
+    - 需要在创建服务实例前，对使用的RAM用户的账号添加相应资源的权限。添加RAM权限的详细操作，请参见[为RAM用户授
+      权](https://help.aliyun.com/document_detail/121945.html)。所需权限如下表所示。
+    - 且需要授权创建关联角色，参考下图，选中 **同意授权并创建关联角色**
 
 | 权限策略名称 | 备注 |
 | --- | --- |
@@ -34,19 +37,19 @@ TuGraph部署的为社区开源版本，源码参考[Github Repo](https://github
 | AliyunComputeNestUserFullAccess | 管理计算巢服务（ComputeNest）的用户侧权限 |
 | AliyunCloudMonitorFullAccess | 管理云监控（CloudMonitor）的权限 |
 
+![1-1.png](1-1.png)
+
 ### 1. 部署入口
 
 您可以在阿里云计算巢自行搜索，也可以通过下述部署链接快速到达。
 
 [部署链接](https://computenest.console.aliyun.com/user/cn-hangzhou/serviceInstanceCreate?ServiceId=service-7b50ea3d20e643da95bf&&isTrial=true)
 
-如果您是第一次使用阿里云计算巢，需要选中 **同意授权并创建关联角色**。
-
-![1.png](1.png)
-
 ### 2. 申请试用
 
-在正式试用前，需要申请试用，点击免费试用之后，按照提示填写信息，在审核通过后就可以创建TuGraph服务。
+在正式试用前，需要申请试用，按照提示填写信息，在审核通过后就可以创建TuGraph服务。
+
+![1-2.png](1-2.png)
 
 ### 3. 创建TuGraph服务
 
