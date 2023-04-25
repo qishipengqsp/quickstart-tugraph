@@ -50,7 +50,7 @@ TuGraph部署的为社区开源版本，源码参考[Github Repo](https://github
 | 参数组 | 参数项 | 示例 | 说明 |
 | --- | --- | --- | --- |
 | 服务实例名称 | N/A | test | 实例的名称 |
-| 地域 | N/A | 华北2（北京） | 选中服务实例的地域，建议就近选中，以获取更好的网络延时。 |
+| 地域 | N/A | 华东1（杭州） | 选中服务实例的地域，建议就近选中，以获取更好的网络延时。 |
 | 付费类型配置 | 付费类型 | 按量付费 | 免费使用请选用按量付费 |
 | 可用区配置 | 部署区域 | 可用区I | 地域下的不同可用区域，确保实例非空 |
 | 选择已有基础资源配置 | VPC ID | vpc-xxx | 按实际情况，选择专有网络的ID。 |
@@ -58,7 +58,11 @@ TuGraph部署的为社区开源版本，源码参考[Github Repo](https://github
 | ECS实例配置 | 实例类型 | ecs.r6.xlarge | 当前支持ecs.r6.xlarge和ecs.r7a.xlarge规格 |
 | ECS实例配置 | 实例密码 | ******** | 设置实例密码。长度8~30个字符，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+={}[]:;'<>,.?/ 中的特殊符号）。 |
 
-### 3. 创建TuGraph服务
+### 3. 申请试用
+
+在正式试用前，需要申请试用，点击免费试用之后，按照提示填写信息，在审核通过后就可以创建TuGraph服务。
+
+### 4. 创建TuGraph服务
 
 创建服务按如下步骤进行，参考下图：
 
@@ -81,7 +85,7 @@ TuGraph部署的为社区开源版本，源码参考[Github Repo](https://github
 
 - 点击左下角绿色背景的*开始免费试用*，
 
-### 4. 启动TuGraph服务
+### 5. 启动TuGraph服务
 
 - 查看服务实例：服务实例创建成功后，部署时间大约需要2分钟。部署完成后，页面上可以看到对应的服务实例，如下图
 
@@ -91,20 +95,33 @@ TuGraph部署的为社区开源版本，源码参考[Github Repo](https://github
 
 ![4.png](4.png)
 
-- 点击web的链接，即可跳转访问已经部署好的TuGraph的前端页面
+- 点击web的链接，即可跳转访问已经部署好的TuGraph Web。建议新手先通过TuGraph Web，快速使用demo上手。
+    - 首先在TuGraph Web的登录页面上，输入默认用户名（admin）和默认密码(73@TuGraph)进行登录，参考下图
+    - 登录完成后，依次点击“新建示例”、“创建示例”，等待创建完成后，3中的步骤会依次变成绿色，会默认切换到子图MovieDemo1，参考下图
 
-### 5. 使用TuGraph服务
+![5.png](5.png)
+![6.png](6.png)
 
-建议新手先通过网页端的demo快速使用。更多功能参考[TuGraph可视化使用文档](https://tugraph.antgroup.com/doc?version=V3.3.4)
+更多功能请参考[TuGraph使用文档](https://tugraph.antgroup.com/doc?version=V3.3.4)
 
 ## 联系我们
 
-- 快速问题排查：[Github Discussion](https://github.com/TuGraph-family/tugraph-db/discussions/115)
 - TuGraph官网：[https://tugraph.antgroup.com/](https://tugraph.antgroup.com/)
-- 联系邮箱：[tugraph@service.alipay.com](mailto:tugraph@service.alipay.com)
 - 社区版开源地址：[https://github.com/TuGraph-family/tugraph-db](https://github.com/TuGraph-family/tugraph-db)
+- 联系邮箱：[tugraph@service.alipay.com](mailto:tugraph@service.alipay.com)
+- 快速问题排查：[Github Discussion](https://github.com/TuGraph-family/tugraph-db/discussions/115)，也可以通过技术交流群
+  和我们进行联系，详见下面二维码。
+
+TuGraph钉钉交流群：
+
+![alert](dingtalk.png)
+
+TuGraph微信交流群：
+
+![alert](wechat_tech.png)
+
 
 
 扫码关注微信公众号，技术博客、活动通知不容错过：
 
-![%.png](5.png)
+![alert](wechat.png)
