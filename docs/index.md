@@ -78,8 +78,9 @@ TuGraph部署的为社区开源版本，源码参考[Github Repo](https://github
 ![2-1.png](2-1.png)
 
 - 选择部署区域，如下图中“可用区I”
-- 选择实例类型，当前支持ecs.r6.xlarge和ecs.r7a.xlarge规格。**如果列表中无机型可选，请尝试选择其他的部署区域**
-- 选中机型
+- 选择实例类型，当前支持2个套餐的免费试用（自定义套餐不支持试用）
+    - 套餐一：ecs.r6.xlarge
+    - 套餐二：ecs.r7a.xlarge
 - 配置实例的密码
 
 ![2-2.png](2-2.png)
@@ -108,6 +109,16 @@ TuGraph部署的为社区开源版本，源码参考[Github Repo](https://github
 ![6.png](6.png)
 
 更多功能请参考[TuGraph使用文档](https://tugraph.antgroup.com/doc?version=V3.3.4)
+
+## 常见问题FAQ
+
+### 问题一：部署区域无可用资源
+
+有时，所选部署区域（如可用区G）没有所选套餐的可用资源，会报错如下图所示
+
+![trouble-1.jpg](trouble1.jpeg)
+
+**解决办法**：尝试选择其他区域，如可用区I等
 
 ## 联系我们
 
