@@ -103,12 +103,12 @@ TuGraph部署的为社区开源版本，源码参考[Github Repo](https://github
 
 - 点击web的链接，即可跳转访问已经部署好的TuGraph Web。建议新手先通过TuGraph Web，快速使用demo上手。
     - 首先在TuGraph Web的登录页面上，输入默认用户名（admin）和默认密码(73@TuGraph)进行登录，参考下图
-    - 登录完成后，依次点击“新建示例”、“创建示例”，等待创建完成后，3中的步骤会依次变成绿色，会默认切换到子图MovieDemo1，参考下图
+    - 登录完成后，选择任意一个带有官方图表的图项目，其中内置了demo数据，开启图数据的探索和发现！
 
 ![5.png](5.png)
 ![6.png](6.png)
 
-更多功能请参考[TuGraph使用文档](https://tugraph.antgroup.com/doc?version=V3.3.4)
+更多功能请参考[TuGraph使用文档](https://tugraph-db.readthedocs.io/zh_CN/latest/)
 
 ## 常见问题FAQ
 
@@ -119,6 +119,11 @@ TuGraph部署的为社区开源版本，源码参考[Github Repo](https://github
 ![trouble-1.jpg](trouble1.jpeg)
 
 **解决办法**：尝试选择其他区域，如可用区I等
+
+
+### 问题二: 启动后web访问不通
+
+web的启动需要一点点时间，请稍后刷新页面即可。
 
 ## 联系我们
 
