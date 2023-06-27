@@ -97,13 +97,13 @@ TuGraph部署的为社区开源版本，源码参考[Github Repo](https://github
 
 ![3.png](3.png)
 
-- 点击该服务实例访问TuGraph。进入到对应的服务实例后，可以在页面上获取到web、rpc、ssh共3种使用方式。
+- 点击该服务实例访问TuGraph。进入到对应的服务实例后，可以在页面上获取到web、rpc、ssh共3种使用方式，并且页面上展示了admin用户的密码
 
 ![4.png](4.png)
 
 - 点击web的链接，即可跳转访问已经部署好的TuGraph Web。建议新手先通过TuGraph Web，快速使用demo上手。
-    - 首先在TuGraph Web的登录页面上，输入默认用户名（admin）和默认密码(73@TuGraph)进行登录，参考下图
-    - 登录完成后，选择任意一个带有官方图表的图项目，其中内置了demo数据，开启图数据的探索和发现！
+    - 首先在TuGraph Web的登录页面上，输入默认用户名admin和页面上展示的admin用户的密码进行登录，参考下图
+    - 登录完成后，选择任意一个带有官方图标的图项目，其中内置了demo数据，开启图数据的探索和发现！
 
 ![5.png](5.png)
 ![6.png](6.png)
@@ -125,6 +125,10 @@ TuGraph部署的为社区开源版本，源码参考[Github Repo](https://github
 
 web的启动需要一点点时间，请稍后刷新页面即可。
 
+### 问题三: 登录时的用户名密码不正确
+
+请注意检查，登录时使用的密码应为详情页面展示的密码。
+
 ## 联系我们
 
 - TuGraph官网：[https://tugraph.antgroup.com/](https://tugraph.antgroup.com/)
@@ -140,7 +144,6 @@ TuGraph钉钉交流群：
 TuGraph微信交流群：
 
 ![alert](wechat_tech.png)
-
 
 
 扫码关注微信公众号，技术博客、活动通知不容错过：
