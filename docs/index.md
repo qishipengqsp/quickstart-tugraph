@@ -9,10 +9,10 @@ TuGraph（tugraph.antgroup.com）是蚂蚁集团的高性能图数据库（Graph
 
 TuGraph部署的为社区开源版本，源码参考[Github Repo](https://github.com/TuGraph-family/tugraph-db)，目前可以选择的实例规格如下：
 
-| 规格族 | vCPU与内存 | 系统盘 | 公网带宽 |
-| --- | --- | --- | --- |
+| 规格族         | vCPU与内存                 | 系统盘              | 公网带宽      |
+|----------------|-------------------------|-------------------|-----------|
 | ecs.r7a.xlarge | AMD 内存型 r7a，4vCPU 32GiB | ESSD云盘 200GiB PL0 | 固定带宽1Mbps |
-| ecs.r6.xlarge  | 内存型r6，4vCPU 32GiB | ESSD云盘 200GiB PL0 | 固定带宽1Mbps |
+| ecs.r6.xlarge  | 内存型r6，4vCPU 32GiB       | ESSD云盘 200GiB PL0 | 固定带宽1Mbps |
 
 预估费用在创建实例时可实时看到（目前为免费）。
 如需更多规格、其他服务（如集群高可用性要求、企业级支持服务等），请联系我们 [tugraph@service.alipay.com](mailto:tugraph@service.alipay.com)。
@@ -29,13 +29,13 @@ TuGraph部署的为社区开源版本，源码参考[Github Repo](https://github
       权](https://help.aliyun.com/document_detail/121945.html)。所需权限如下表所示。
     - 且需要授权创建关联角色，参考下图，选中 **同意授权并创建关联角色**
 
-| 权限策略名称 | 备注 |
-| --- | --- |
-| AliyunECSFullAccess | 管理云服务器服务（ECS）的权限 |
-| AliyunVPCFullAccess | 管理专有网络（VPC）的权限 |
-| AliyunROSFullAccess | 管理资源编排服务（ROS）的权限 |
+| 权限策略名称                    | 备注                                    |
+|---------------------------------|---------------------------------------|
+| AliyunECSFullAccess             | 管理云服务器服务（ECS）的权限             |
+| AliyunVPCFullAccess             | 管理专有网络（VPC）的权限                 |
+| AliyunROSFullAccess             | 管理资源编排服务（ROS）的权限             |
 | AliyunComputeNestUserFullAccess | 管理计算巢服务（ComputeNest）的用户侧权限 |
-| AliyunCloudMonitorFullAccess | 管理云监控（CloudMonitor）的权限 |
+| AliyunCloudMonitorFullAccess    | 管理云监控（CloudMonitor）的权限          |
 
 ![1-1.png](1-1.png)
 
@@ -57,15 +57,15 @@ TuGraph部署的为社区开源版本，源码参考[Github Repo](https://github
 
 您在创建服务实例的过程中，需要配置服务实例信息的参数列表，具体如下。
 
-| 参数组 | 参数项 | 示例 | 说明 |
-| --- | --- | --- | --- |
-| 服务实例名称 | N/A | test | 实例的名称 |
-| 地域 | N/A | 华东1（杭州） | 选中服务实例的地域，建议就近选中，以获取更好的网络延时。 |
-| 付费类型配置 | 付费类型 | 按量付费 | 免费使用请选用按量付费 |
-| 可用区配置 | 部署区域 | 可用区I | 地域下的不同可用区域，确保实例非空 |
-| 选择已有基础资源配置 | VPC ID | vpc-xxx | 按实际情况，选择专有网络的ID。 |
-| 选择已有基础资源配置 | 交换机ID | vsw-xxx | 按实际情况，选择交换机ID。若找不到交换机, 可尝试切换地域和可用区 |
-| ECS实例配置 | 实例类型 | ecs.r6.xlarge | 当前支持ecs.r6.xlarge和ecs.r7a.xlarge规格 |
+| 参数组               | 参数项   | 示例          | 说明                                                           |
+|--------------------|----------|---------------|--------------------------------------------------------------|
+| 服务实例名称         | N/A      | test          | 实例的名称                                                     |
+| 地域                 | N/A      | 华东1（杭州）   | 选中服务实例的地域，建议就近选中，以获取更好的网络延时。          |
+| 付费类型配置         | 付费类型 | 按量付费      | 免费使用请选用按量付费                                         |
+| 可用区配置           | 部署区域 | 可用区I       | 地域下的不同可用区域，确保实例非空                              |
+| 选择已有基础资源配置 | VPC ID   | vpc-xxx       | 按实际情况，选择专有网络的ID。                                   |
+| 选择已有基础资源配置 | 交换机ID | vsw-xxx       | 按实际情况，选择交换机ID。若找不到交换机, 可尝试切换地域和可用区 |
+| ECS实例配置          | 实例类型 | ecs.r6.xlarge | 当前支持ecs.r6.xlarge和ecs.r7a.xlarge规格                      |
 | ECS实例配置 | 实例密码 | ******** | 设置实例密码。长度8~30个字符，必须包含三项（大写字母、小写字母、数字、 ()`~!@#$%^&*_-+={}[]:;'<>,.?/ 中的特殊符号）。 |
 
 #### 3.2 具体步骤
@@ -77,11 +77,11 @@ TuGraph部署的为社区开源版本，源码参考[Github Repo](https://github
 
 ![2-1.png](2-1.png)
 
-- 选择部署区域，如下图中“可用区I”
 - 选择实例类型，当前支持2个套餐的免费试用（自定义套餐不支持试用）
     - 套餐一：ecs.r6.xlarge
     - 套餐二：ecs.r7a.xlarge
 - 配置实例的密码
+- 选择部署区域，如下图中“可用区I”
 
 ![2-2.png](2-2.png)
 
